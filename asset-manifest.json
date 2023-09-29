@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-page/static/css/main.a432f851.css",
+    "main.js": "/my-portfolio-page/static/js/main.c8dc6e97.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio-page/static/js/787.128fc6e9.chunk.js",
+    "static/media/bombTheEnemy.jpg": "/my-portfolio-page/static/media/bombTheEnemy.8545b698bff2a24bb568.jpg",
+    "static/media/game.png": "/my-portfolio-page/static/media/game.2e9234caa60c3fa7ccd8.png",
+    "static/media/fa-solid-900.ttf": "/my-portfolio-page/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/my-portfolio-page/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/my-portfolio-page/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/my-portfolio-page/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/Badges_Excellenteam.png": "/my-portfolio-page/static/media/Badges_Excellenteam.9034c7cc3d13abb3e53e.png",
+    "static/media/autocomplete.png": "/my-portfolio-page/static/media/autocomplete.47ef6e8fe5f3d23169b7.png",
+    "static/media/fa-regular-400.ttf": "/my-portfolio-page/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/certification.jpeg": "/my-portfolio-page/static/media/certification.68be3ab3a321f3c39deb.jpeg",
+    "static/media/TheKing.png": "/my-portfolio-page/static/media/TheKing.7ab80b3ff276b94beb47.png",
+    "static/media/fa-regular-400.woff2": "/my-portfolio-page/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/my-portfolio-page/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/my-portfolio-page/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/my-portfolio-page/index.html",
+    "main.a432f851.css.map": "/my-portfolio-page/static/css/main.a432f851.css.map",
+    "main.c8dc6e97.js.map": "/my-portfolio-page/static/js/main.c8dc6e97.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio-page/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a432f851.css",
+    "static/js/main.c8dc6e97.js"
+  ]
+}
