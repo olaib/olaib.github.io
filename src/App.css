@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,500&display=swap');
+
+.navbar.scrolled {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled .navbar-brand img {
+    transform: scale(0.8);
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.click-me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8dcebc;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.click-me:hover::before {
+    width: 100%;
+}
+
+.colored {
+    color: rgb(159, 224, 207);
+}
+
+.click-me {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.click-me:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px #8dcebc, 0 0 20px #8dcebc, 0 0 40px #8dcebc, 0 0 80px #8dcebc, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+}
+
+a {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+a:hover {
+    color: #8dcebc;
+    text-shadow: 0 0 10px #8dcebc, 0 0 20px #8dcebc, 0 0 40px #8dcebc, 0 0 80px #8dcebc, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+}
+
+.btn {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #8dcebc;
+    color: #fff;
+}
+
+.App {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6)) no-repeat fixed center;
+    min-height: 100vh;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 750;
+    letter-spacing: 1px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
