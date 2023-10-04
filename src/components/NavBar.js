@@ -1,6 +1,8 @@
-import {Container, Nav, Navbar} from 'react-bootstrap';
 import {useEffect, useState} from "react";
 import {SCROLL_OFFSET, SOCIAL_LINKS, NAV_ITEMS, HOME_LINK, NAV_ICONS_COLOR} from "../constants";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState(HOME_LINK);
@@ -42,7 +44,7 @@ const NavBar = () => {
                             )
                         })}
                     </Nav>
-                    <Nav.Link href='/#contact-info' className={'me-5 nav-link'}>
+                    <Nav.Link href='#contact-info' className={'me-5 nav-link'}>
                         <i className="fas fa-envelope" style={{color: `${NAV_ICONS_COLOR}`}}></i> Contact Me
                     </Nav.Link>
                     <span className="navbar-text">

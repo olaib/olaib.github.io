@@ -2,8 +2,12 @@ import game from "./assets/images/game.png";
 import img3 from "./assets/images/TheKing.png";
 import img4 from "./assets/images/autocomplete.png";
 import img5 from "./assets/images/bombTheEnemy.jpg";
+import image6 from "./assets/images/image2.jpg";
+import BADGE_IMG from "./assets/images/Badges_Excellenteam.png";
+import CERTIFICATION_IMG from "./assets/images/certification.jpeg";
 
 export const SCROLL_OFFSET = 50, HOME_LINK = "home",
+    EXCELLENT_BADGE = BADGE_IMG, CERTIFICATION = CERTIFICATION_IMG,
     GITHUB_ICON = 'fab fa-github',
     YOUTUBE_ICON = 'fab fa-youtube',
     SOCIAL_LINKS = {
@@ -56,16 +60,17 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             }
         ,
     },
-    NAV_ICONS_COLOR = '#8dcebc',
+    NAV_ICONS_COLOR = '#AB78B7FF',
     JOB_DESCRIPTIONS = [
+        'Software',
         'Python',
         'C++',
         'Frontend',
         'Backend',
-        'FullStack',
+        'Fullstack',
     ],
     STYLE = {
-        textShadow: '0 0 10px #8dcebc, 0 0 20px #8dcebc, 0 0 40px #0000, 0 0 80px #0000, 0 0 120px #8dcebc, 0 0 160px #8dcebc',
+        textShadow: '0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;'
     },
     INFO = {
         'email': 'olaib76@gmail.com',
@@ -100,7 +105,7 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
         },
         {
             title: "Bomb The Enemy Game",
-            description: "CS Final project in C# and Unity",
+            description: "Unity RTS Game in C#",
             imgUrl: img5,
             githubLink: 'https://github.com/olaib/Unity-Bomb-the-Enemy-Maze-RTS-Game/tree/main/BombTheEnemy-Game',
             youtubeLink: 'https://www.youtube.com/watch?app=desktop&v=y5gzi-VMkeU',
@@ -112,7 +117,7 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             imgUrl: game,
             githubLink: 'https://github.com/olaib/BOX2D_OOP2_FINAL_PROJECT',
             youtubeLink: 'https://www.youtube.com/embed/uGGU00LBSfI',
-            About: "Game in Box2D A a puzzle-platformer game in which you must control the three characters of different sizes and make them all reach the exit successfully."
+            About: "Game in Box2D A a puzzle-platformed game in which you must control the three characters of different sizes and make them all reach the exit successfully."
         },
         {
             title: "Circle-The-Cat-Game-BFS-algorithm",
@@ -124,7 +129,7 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
         },
         {
             title: "Save The King Game",
-            description: "Oop 1: SFML Game",
+            description: "SFML Game",
             imgUrl: img3,
             githubLink: 'https://github.com/olaib/oop1_final_project_save_the_king_game',
             youtubeLink: '',
@@ -141,15 +146,12 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             },
             {
                 'name': 'C++',
-                'icon': ''
             },
             {
                 'name': 'C',
-                'icon': ''
             },
             {
                 'name': 'C#',
-                'icon': ''
             },
             {
                 'name': 'JavaScript',
@@ -168,10 +170,6 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
                 'icon': 'fas fa-database'
             },
             {
-                'name': 'MongoDB',
-                'icon': 'fas fa-database'
-            },
-            {
                 'name': 'React',
                 'icon': 'fab fa-react'
             },
@@ -184,7 +182,7 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
                 'icon': 'fas fa-server'
             },
         ],
-        'tools & frameworks': [
+        'toolsAndFrameworks': [
             {
                 'name': 'Git',
                 'icon': 'fab fa-git-alt'
@@ -194,8 +192,8 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
                 'icon': 'fab fa-github'
             },
             {
-                'name': 'flask',
-                'icon': ''
+                'name': 'Flask (Python web framework)',
+                'img': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png'
             },
             {
                 'name': 'Spring',
@@ -211,6 +209,10 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             }],
         'other': [
             {
+                'name': 'MongoDB',
+                'icon': 'fas fa-database'
+            },
+            {
                 'name': 'Image Processing',
                 'icon': 'fas fa-image'
             },
@@ -221,5 +223,43 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             {
                 'name': 'Automation Testing QA',
                 'icon': 'fas fa-robot'
-            }]
-    }
+            },
+            {
+                'name': 'TypeScript',
+                'icon': 'fab fa-js-square'
+            }
+        ]
+    },
+    CONTACT_INFO = [
+        {
+            icon: 'fas fa-envelope fa-lg',
+            link: `mailto:${INFO.email}`,
+            text: INFO.email,
+            color: '#f52424'
+        },
+        {
+            icon: 'fas fa-phone-alt fa-lg',
+            link: `tel:${INFO.phone}`,
+            text: INFO.phone,
+            color: '#ffffff'
+        },
+        {
+            icon: 'fab fa-whatsapp fa-lg',
+            link: `https://api.whatsapp.com/send?phone=${INFO.domainPhone}`,
+            text: INFO.phone,
+            color: '#25D366'
+        },
+        {
+            icon: 'fab fa-linkedin-in fa-lg',
+            link: SOCIAL_LINKS.linkedin.link,
+            text: SOCIAL_LINKS.linkedin.name,
+        },
+        {
+            icon: 'fab fa-github fa-lg',
+            link: SOCIAL_LINKS.github.link,
+            text: SOCIAL_LINKS.github.name,
+            color: '#ffffff'
+        },
+    ],
+    IMAGE_6 = image6
+

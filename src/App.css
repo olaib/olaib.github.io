@@ -20,7 +20,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #8dcebc;
+    background-color: #ab78b7;
     transition: width 0.3s ease-in-out;
     z-index: -1;
 }
@@ -30,7 +30,59 @@
 }
 
 .colored {
-    color: rgb(159, 224, 207);
+    color: rgb(191, 137, 206);
+}
+
+.animated-hello {
+    display: inline-block;
+}
+
+.hello,
+.world,
+.first-word, .second-word, .third-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hello, .first-word {
+    animation-name: fadeInUp;
+    animation-delay: 0.3s;
+}
+
+.world, .second-word {
+    animation-name: fadeInUp;
+    animation-delay: 1.3s;
+}
+
+.third-word {
+    animation-name: fadeInUp;
+    animation-delay: 2.1s;
+}
+
+.quote-writer {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: fadeInUp;
+    animation-delay: 3.1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .click-me {
@@ -42,40 +94,205 @@
 .click-me:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 10px #8dcebc, 0 0 20px #8dcebc, 0 0 40px #8dcebc, 0 0 80px #8dcebc, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+    box-shadow: 0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
 }
 
 a {
     color: #fff;
     font-weight: 500;
-    padding: 10px 20px;
+    transition: color 0.3s ease, color 0.3s;
+    transform: perspective(500px) translateZ(0) scale(1);
 }
 
 a:hover {
-    color: #8dcebc;
-    text-shadow: 0 0 10px #8dcebc, 0 0 20px #8dcebc, 0 0 40px #8dcebc, 0 0 80px #8dcebc, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+    color: #bb7dcb;
+    transform: translateY(10px);
+    transition: color 0.3s ease, transform 0.3s;
+    text-shadow: 0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+}
+
+.glow-text {
+    text-shadow: 0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+}
+
+.typing {
+    overflow: hidden;
+    border-right: 2px solid #fafafa;
+    white-space: nowrap;
+    animation: typing 3s steps(40) infinite, blink 0.7s infinite;
+    text-shadow: 0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fafafa;
+    }
 }
 
 .btn {
     border: 1px solid #ffffff;
     border-radius: 50px;
     padding: 10px 30px;
-    color: #fff;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    color: #AB78B7FF;
+    background-color: transparent;
 }
 
 .btn:hover {
-    background-color: #8dcebc;
+    background-color: #ab78b7;
     color: #fff;
 }
 
+.animated-image {
+    position: relative;
+    text-align: center;
+    /*overflow: hidden;*/
+    transform: translate(-50%, -50%);
+    animation: spin 4s ease-in-out infinite alternate;;
+}
+
+.animated-image img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-image img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(-20px) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(20px) rotate(5deg);
+    }
+}
 .App {
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    background-image: url('./assets/images/background.jpg');
     background-size: cover;
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6)) no-repeat fixed center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
+}
+
+.card-select {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-select img {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-select:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 10px #41165b, 0 0 20px #772673, 0 0 40px #b118bb, 0 0 80px #b68dce, 0 0 120px #8dcebc, 0 0 160px #8dcebc;
+    z-index: 2;
+}
+
+
+.card-select:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(181, 128, 190, 0.33);
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.card-select:hover:before {
+    width: 100%;
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+}
+
+.inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #EFEFFA;
+}
+
+.inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #EFEFFA;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
 }
 
 .logo {
@@ -95,13 +312,6 @@ a:hover {
     }
 }
 
-
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-}
-
-
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -115,7 +325,7 @@ a:hover {
 
 
 .App-link {
-    color: #61dafb;
+    color: #4d1d65;
 }
 
 @keyframes App-logo-spin {
