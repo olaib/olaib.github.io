@@ -82,7 +82,7 @@ const HireMe = (props) => {
                                         style={{color: NAV_ICONS_COLOR}}>How to Hire Me?</h3>
                                     <div>
                                         <p>
-                                            If you have projects or jop opportunity you'd like to discuss, please
+                                            If you have projects or job opportunity you'd like to discuss, please
                                             contact me at <a href={`mailto:${INFO.email}`}>{INFO.email}</a> or {' '}
                                             <a href={'#contact-info'}>Contact Me {' '}
                                                 <i style={{color: 'white'}} className="fas fa-contact-book"></i>
