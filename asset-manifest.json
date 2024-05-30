@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/olaib.github.io/static/css/main.7b4e91d8.css",
-    "main.js": "/olaib.github.io/static/js/main.8d8f2cd5.js",
-    "static/js/496.4fb87413.chunk.js": "/olaib.github.io/static/js/496.4fb87413.chunk.js",
+    "main.js": "/olaib.github.io/static/js/main.cf5639ef.js",
+    "static/js/496.f00dfa93.chunk.js": "/olaib.github.io/static/js/496.f00dfa93.chunk.js",
     "static/media/background.jpg": "/olaib.github.io/static/media/background.1d6dc9919172f01dd97e.jpg",
     "static/media/bombTheEnemy.jpg": "/olaib.github.io/static/media/bombTheEnemy.8545b698bff2a24bb568.jpg",
     "static/media/game.png": "/olaib.github.io/static/media/game.2e9234caa60c3fa7ccd8.png",
@@ -21,11 +21,11 @@
     "static/media/fa-v4compatibility.woff2": "/olaib.github.io/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/olaib.github.io/index.html",
     "main.7b4e91d8.css.map": "/olaib.github.io/static/css/main.7b4e91d8.css.map",
-    "main.8d8f2cd5.js.map": "/olaib.github.io/static/js/main.8d8f2cd5.js.map",
-    "496.4fb87413.chunk.js.map": "/olaib.github.io/static/js/496.4fb87413.chunk.js.map"
+    "main.cf5639ef.js.map": "/olaib.github.io/static/js/main.cf5639ef.js.map",
+    "496.f00dfa93.chunk.js.map": "/olaib.github.io/static/js/496.f00dfa93.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b4e91d8.css",
-    "static/js/main.8d8f2cd5.js"
+    "static/js/main.cf5639ef.js"
   ]
 }
