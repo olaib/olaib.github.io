@@ -41,10 +41,13 @@ const About = () => {
                                     className={'colored'}>React</span>,{' '}
                                     <span className={'colored'}>Node.js</span>, <span
                                     className={'colored'}>Java</span> (Spring + OOP),{' '}
-                                    <span className={'colored'}>Flask</span> and
+                                    <span className={'colored'}>Flask</span> and <span className={'colored'}>Flutter</span>(multi platform developemnt) and <span className={'colored'}>NestJs</span> and{' '}
                                     databases like{' '}
                                     <span className={'colored'}>MongoDB</span> and <span
                                     className={'colored'}>MySQL</span> and <span className={'colored'}>SQLite</span>.
+                                </p>                       
+                                <p>
+                                    I have experience in game development using Unity for 3D games and SFML for 2D games.
                                 </p>
                                 <p>
                                     I possess a solid understanding of Object Oriented Programming (OOP) ,Data

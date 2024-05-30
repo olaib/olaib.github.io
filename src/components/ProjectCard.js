@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
                     <Card.Title className={'text-decoration-underline'}>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                     <p className={'text-start'}>{About}</p>
-                    <Card.Img src={image} className={'img-fluid'} style={{width: '500px', height: '330px'}}/>
+                    <Card.Img src={image} className={'img-fluid'} style={{objectFit:'cover'}}/>
                 </Card.Body>
                 <Card.Footer>
                     <div className={'text-center border-1 border-white'}>

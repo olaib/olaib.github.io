@@ -63,9 +63,10 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
     NAV_ICONS_COLOR = '#AB78B7FF',
     JOB_DESCRIPTIONS = [
         'Software',
+        'Fullstack',
+        'Mobile App and Web',
         'Python',
         'C++',
-        'Frontend',
         'Backend',
         'Fullstack',
     ],
@@ -137,7 +138,7 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
         },
     ],
     EXCELLENTEAM_LINK = 'https://www.credly.com/badges/0bcf6727-4934-47b1-836c-32bb02d186c4/linked_in?t=s139f7',
-    CV_LINK = 'https://drive.google.com/file/d/18QICDDClwL7My1toQQiUkzLOAYAqD0QU/view?usp=drive_link',
+    CV_LINK = 'https://docs.google.com/document/d/10SAZZM1Bcn8_Jccf_LeYIq-4Y2Y3nKCC/export?format=docx',
     SKILLS = {
         'programmingLanguages': [
             {
@@ -149,6 +150,12 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
             },
             {
                 'name': 'C',
+            },
+            {
+                'name': 'NesJS',
+            },
+            {
+                'name': 'Flutter (IOS | Android | Web app development)',
             },
             {
                 'name': 'C#',
@@ -188,12 +195,16 @@ export const SCROLL_OFFSET = 50, HOME_LINK = "home",
                 'icon': 'fab fa-git-alt'
             },
             {
-                'name': 'GitHub',
-                'icon': 'fab fa-github'
+                'name': 'Git',
+                'icon': 'fab fa-git-alt'
+            },
+            {
+                'name': 'Unity',
+                'icon': 'fab fa-unity'
             },
             {
                 'name': 'Flask (Python web framework)',
-                'img': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png'
+                'img': ''
             },
             {
                 'name': 'Spring',
